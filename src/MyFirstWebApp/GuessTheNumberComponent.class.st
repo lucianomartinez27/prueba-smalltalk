@@ -41,3 +41,8 @@ GuessTheNumberComponent >> renderContentOn: aCanvas [
 		level: 2;
 		with: self compareNumbersAndGetTextForTheWeb
 ]
+
+{ #category : #initialization }
+GuessTheNumberComponent >> setUp [ 
+	WAAdmin register: self asApplicationAt: 'game' 
+]
